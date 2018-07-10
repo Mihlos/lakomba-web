@@ -1,0 +1,29 @@
+
+#particles-js {
+	background: #fff;
+	width: 100%;	
+}
+
+.ancho-central{
+	top: 180px;
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	z-index: 8;
+}
+
+.logo-central{
+	width: 80%;
+	margin: auto;
+}
+
+.logo-central h1{
+	font-family: 'Leckerli One', cursive;
+ 	font-size: 120px;
+	color: rgba(0,0,0,255);
+}
+
+.logo-central p{
+	font-size: 20px;
+}
