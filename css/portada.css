@@ -1,11 +1,11 @@
 
 #particles-js {
-	background: url(https://images.pexels.com/photos/296888/pexels-photo-296888.jpeg?cs=srgb&dl=attractive-bar-barista-296888.jpg&fm=jpg);
+	background: url(../imgs/b-and-w-bar.jpg);
 	width: 100%;
+	height: 636px;
 	background-position: center;
 	background-attachment: contain;
 	background-size: cover;	
-	filter:blur(2px);
 }
 
 .ancho-central{

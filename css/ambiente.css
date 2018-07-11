@@ -1,15 +1,18 @@
 #ambiente{
 	width: 100%;
-	background: url(../imgs/b-and-w-bar.jpg);
+	height: 636px;
+	background: url(../imgs/brindar.jpg);
 	background-position: center;
 	background-attachment: contain;
 	background-size: cover;
+	
 }
 
 .ambiente{
 	width: 100%;
-	
+
 }
+
 .ambiente h2 {
 	font-size: 40px;
  	font-family: 'Lobster', cursive;
