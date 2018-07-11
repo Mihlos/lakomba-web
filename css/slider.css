@@ -1,7 +1,11 @@
 
 #particles-js {
-	background: #fff;
-	width: 100%;	
+	background: url(https://images.pexels.com/photos/296888/pexels-photo-296888.jpeg?cs=srgb&dl=attractive-bar-barista-296888.jpg&fm=jpg);
+	width: 100%;
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;	
+	filter:blur(2px);
 }
 
 .ancho-central{
@@ -16,14 +20,11 @@
 .logo-central{
 	width: 80%;
 	margin: auto;
+	background-color: rgba(255,255,255,0.6);
 }
 
 .logo-central h1{
 	font-family: 'Leckerli One', cursive;
  	font-size: 120px;
 	color: rgba(0,0,0,255);
-}
-
-.logo-central p{
-	font-size: 20px;
 }
