@@ -1,0 +1,17 @@
+#contacto{
+	width: 100%;
+	background: #000000;	
+}
+.mapa{
+    margin-top: 180px;
+}
+.mapa h2{
+    font-size: 40px;
+ 	font-family: 'Lobster', cursive;
+ 	color: #fff;
+ 	background-color: rgba(255,255,255,0.6);
+}
+
+.mapa p{
+    color: white;
+}
