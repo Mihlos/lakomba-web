@@ -82,7 +82,9 @@ nav ul li a:hover
     padding: 1rem;
     font-family: "Leckerli One";
     text-align: center;
-    font-size: 6em;
+    font-size: 5.5em;
+    text-shadow: white 2px 2px;
+
 }
 .sec2
 {
