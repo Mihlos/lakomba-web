@@ -4,5 +4,4 @@ $(document).ready(function(){
 	$("#interior").css({"height":$(window).height()+ "px"});
 	$("#patio").css({"height":$(window).height()+ "px"});
 	$("#contacto").css({"height":$(window).height()+ "px"});
-
 });

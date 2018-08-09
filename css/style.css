@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+:target
+{
+    padding-top: 7rem !important;
+}
+nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+    z-index: 100;
+}
+nav.black{
+    background: rgba(0,0,0,.9);
+    height: 80px;
+    padding: 10px;
+}
+nav .logo
+{
+    float: left;
+}
+
+nav .logo img
+{
+    height: 80px;
+    transition: .5s;
+} 
+nav ul
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a
+{
+    line-height: 80px;
+    color: #fff;
+    padding: 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+nav.black ul li a{
+    line-height: 60px;
+}
+nav ul li a:hover
+{
+    color: #262626;
+    background: #f00;
+}
+.sec1
+{
+    width: 100%;
+    height: 100vh;
+    background: url(../imgs/interior-alto.jpeg);
+    background-size: cover;
+}
+.lakomba{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.lakomba h1{
+    padding: 1rem;
+    font-family: "Leckerli One";
+    text-align: center;
+    font-size: 6em;
+}
+.sec2
+{
+    width: 100%;
+    height: 75vh;
+    background: url(../imgs/brindar.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec3
+{
+    width: 100%;
+    height: 75vh;
+    background: url(../imgs/interior-escalera.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sec4
+{
+    width: 100%;
+    height: 75vh;
+    background: url(../imgs/patio2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content
+{
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border: none;
+    border-radius: .25rem;
+    box-shadow: 0 2px 16px -2px rgba(0,0,0,.15);
+}
+
+.content h2
+{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+}
+.content p
+{
+    margin: 20px 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
