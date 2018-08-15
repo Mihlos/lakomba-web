@@ -11,4 +11,7 @@ $(document).ready(function(){
     $(".menu h4").click(function(){
         $("nav ul").toggleClass("active")
     })
+    $("nav ul li a").click(function(){
+        $("nav ul").toggleClass("active")
+    })
 })
