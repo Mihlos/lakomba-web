@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-body
-{
+
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body{
     font-family: sans-serif;
 }
 :target
 {
     padding-top: 7rem !important;
 }
-nav
-{
+nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100px;
     padding: 10px 100px;
-    box-sizing: border-box;
     transition: .5s;
     z-index: 100;
 }
@@ -34,20 +35,16 @@ nav .logo
 nav .logo img
 {
     height: 80px;
-    
 } 
 nav ul
 {
     float: right;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 nav ul li{
     list-style: none;
 }
-nav ul li a
-{
+nav ul li a{
     line-height: 80px;
     color: #fff;
     padding: 5px 20px;
@@ -59,17 +56,18 @@ nav ul li a
 nav.black ul li a{
     line-height: 60px;
 }
-nav ul li a:hover
-{
+nav ul li a:hover{
     color: #262626;
     background: #f00;
 }
-.sec1
-{
+section[class^="sec"]{
     width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sec1{
     height: 100vh;
     background: url(../imgs/interior-alto.jpeg);
-    background-size: cover;
 }
 .lakomba{
     display: flex;
@@ -82,52 +80,41 @@ nav ul li a:hover
     padding: 1rem;
     font-family: "Leckerli One";
     text-align: center;
-    font-size: 5.5em;
+    font-size: 7em;
     text-shadow: white 2px 2px;
 
 }
-.sec2
-{
-    width: 100%;
-    height: 75vh;
-    background: url(../imgs/brindar.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.sec3
-{
-    width: 100%;
+.sec2{
     height: 75vh;
     background: url(../imgs/interior-escalera.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-.sec4
-{
-    width: 100%;
-    height: 75vh;
-    background: url(../imgs/patio2.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
-.content
-{
+.sec3{
+    height: 75vh;
+    background: url(../imgs/patio2.jpeg);
+}
+.sec4{
+    height: 75vh;
+    background: #262626;
+}
+
+.content{
     display: grid;
-    grid-template-columns: fit-content fit-content;
     grid-gap: 1em;
     padding: 1rem;
+    background-color: #fafafa;
 }
 .text{
     padding: 1rem 2rem;
-    border: none;
     border-radius: .25rem;
     box-shadow: 0 2px 16px -2px rgba(0,0,0,.15);
+    background-color: #fff;
 }
 .images{
     padding: 1rem;
+    background-color: #fff;
     box-shadow: 0 2px 16px -2px rgba(0,0,0,.15);
+    border-radius: .25rem;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
@@ -136,20 +123,33 @@ nav ul li a:hover
 .images img{
     width: 250px;
     height: 250px;
+    margin: .2em;
+    border-radius: .25rem;
 }
 
-.content h2
-{
-    margin: 0;
-    padding: 0;
+.content h2{
     font-family: 'Ubuntu', sans-serif;
     font-size: 3em;
 }
-.content p
-{
+.content p{
     margin: 20px 0 0;
     font-size: 1rem;
     line-height: 1.5;
+}
+.mapa{
+    color: #fff;
+}
+.mapa h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+}
+.mapa p{
+    margin: 20px 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.gmap{
+    width: 100%;
 }
 .responsive-bar{
     display: none;
@@ -170,14 +170,11 @@ nav ul li a:hover
     .responsive-bar .menu h4{
         float: right;
         color: #fff;
-        margin: 0;
-        padding: 0;
         line-height: 50px;
     }
     nav.black{
         background: rgba(0,0,0,.9);
         height: 60px;
-        padding: 0;
     }
 
     nav ul{
@@ -200,14 +197,15 @@ nav ul li a:hover
 
     nav ul li a{
         display: block;
-        padding: 0;
         width: 100%;
         text-align: center;
         line-height: 30px !important;
         color: #fff;
     }
-    :target
-    {
+    .lakomba h1{
+        font-size: 5em;
+    }
+    :target{
         padding-top: 5rem !important;
     }
 }
