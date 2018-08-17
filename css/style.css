@@ -10,7 +10,12 @@ body{
 }
 :target
 {
-    padding-top: 7rem !important;
+    padding-top: 100px ;
+    margin-top: -100px ;
+}
+#contacto:target{
+    margin-top: 0 ;
+    padding-top: 0 ;
 }
 nav{
     position: fixed;
@@ -93,7 +98,7 @@ section[class^="sec"]{
     height: 75vh;
     background: url(../imgs/patio2.jpeg);
 }
-.sec4{
+.footer{
     height: 75vh;
     background: #262626;
 }
@@ -125,6 +130,14 @@ section[class^="sec"]{
     height: 250px;
     margin: .2em;
     border-radius: .25rem;
+    object-fit: cover;
+    filter: brightness(70%);
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.15s ease 0s;
+}
+.images img:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+    filter: brightness(100%); 
 }
 
 .content h2{
@@ -206,6 +219,11 @@ section[class^="sec"]{
         font-size: 5em;
     }
     :target{
-        padding-top: 5rem !important;
+        padding-top: 80px ;
+        margin-top: -80px ;
+    }
+    #contacto:target{
+        margin-top: 0 ;
+        padding-top: 0 ;
     }
 }

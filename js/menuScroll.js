@@ -14,4 +14,12 @@ $(document).ready(function(){
     $("nav ul li a").click(function(){
         $("nav ul").toggleClass("active")
     })
+
+
+    // var baseUrl = document.location.pathname
+    // $(".images img").click(function(){
+    //     alert(baseUrl)
+    //     location.replace(baseUrl)
+    // })
+
 })
