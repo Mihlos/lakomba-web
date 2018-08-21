@@ -8,29 +8,29 @@
 body{
     font-family: sans-serif;
 }
-:target
+/* :target
 {
-    padding-top: 100px ;
-    margin-top: -100px ;
+    padding-top: 80px;
+    margin-top: -80px;
 }
 #contacto:target{
     margin-top: 0 ;
     padding-top: 0 ;
-}
+} */
 nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    padding: 10px 100px;
+    height: 80px;
+    padding: 10px 60px;
     transition: .5s;
     z-index: 100;
 }
 nav.black{
     background: rgba(0,0,0,.9);
-    height: 80px;
-    padding: 10px;
+    height: 60px;
+    padding: 0;
 }
 nav .logo
 {
@@ -86,12 +86,13 @@ section[class^="sec"]{
     font-family: "Leckerli One";
     text-align: center;
     font-size: 7em;
-    text-shadow: white 2px 2px;
-
+    text-shadow: white 1px 1px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: .5rem;
 }
 .sec2{
     height: 75vh;
-    background: url(../imgs/interior-escalera.jpeg);
+    background: url(../imgs/interior-barra.jpeg);
 }
 
 .sec3{
@@ -218,12 +219,12 @@ section[class^="sec"]{
     .lakomba h1{
         font-size: 5em;
     }
-    :target{
+    /* :target{
         padding-top: 80px ;
         margin-top: -80px ;
     }
     #contacto:target{
         margin-top: 0 ;
         padding-top: 0 ;
-    }
+    } */
 }

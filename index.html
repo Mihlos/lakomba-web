@@ -38,7 +38,7 @@
 		</nav>
 		<section class="sec1">
 			<div class="lakomba animated zoomIn">
-				<h1>Lakomba</h1>
+				<h1 id="top">Lakomba</h1>
 			</div>
 		</section>
 		<section class="content">
@@ -56,18 +56,10 @@
 				</p>
 			</div>
 			<div class="images" id="lightgallery">
-				<a href="imgs/lak.jpg">
-					<img src="imgs/lak.jpg" alt="">
-				</a>
-				<a href="imgs/lakomba-concierto.JPG">
-					<img src="imgs/lakomba-concierto.JPG" alt="">
-				</a>
-				<a href="imgs/amb3.JPG">
-					<img src="imgs/amb3.JPG" alt="">
-				</a>
-				<a href="imgs/amb4.JPG">
-					<img src="imgs/amb4.JPG" alt="">
-				</a>
+				<a href="imgs/lak.jpg"><img src="imgs/lak.jpg" alt=""></a>
+				<a href="imgs/lakomba-concierto.JPG"><img src="imgs/lakomba-concierto.JPG" alt=""></a>
+				<a href="imgs/amb3.JPG"><img src="imgs/amb3.JPG" alt=""></a>
+				<a href="imgs/amb4.JPG"><img src="imgs/amb4.JPG" alt=""></a>
 			</div>
 		</section>
 
@@ -88,18 +80,10 @@
 				</p>
 			</div>
 			<div class="images" id="lightgallery2">
-					<a href="imgs/interior1.JPG">
-						<img src="imgs/interior1.JPG" alt="">
-					</a>
-					<a href="imgs/interior-patio.jpeg">
-						<img src="imgs/interior-patio.jpeg" alt="">
-					</a>
-					<a href="imgs/interior-abajo.jpeg">
-						<img src="imgs/interior-abajo.jpeg" alt="">
-					</a>
-					<a href="imgs/interior-barra.jpeg">
-						<img src="imgs/interior-barra.jpeg" alt="">
-					</a>
+					<a href="imgs/interior1.JPG"><img src="imgs/interior1.JPG" alt=""></a>
+					<a href="imgs/interior-patio.jpeg"><img src="imgs/interior-patio.jpeg" alt=""></a>
+					<a href="imgs/interior-abajo.jpeg"><img src="imgs/interior-abajo.jpeg" alt=""></a>
+					<a href="imgs/interior-barra.jpeg"><img src="imgs/interior-barra.jpeg" alt=""></a>
 			</div>
 		</section>
 
@@ -120,18 +104,10 @@
 				</p>
 			</div>
 			<div class="images" id="lightgallery3">
-					<a href="imgs/patio1.jpeg">
-						<img src="imgs/patio1.jpeg" alt="">
-					</a>
-					<a href="imgs/patio2.jpeg">
-						<img src="imgs/patio2.jpeg" alt="">
-					</a>
-					<a href="imgs/patio1.JPG">
-						<img src="imgs/patio1.JPG" alt="">
-					</a>
-					<a href="imgs/patio2.JPG">
-						<img src="imgs/patio2.JPG" alt="">
-					</a>
+					<a href="imgs/patio1.jpeg"><img src="imgs/patio1.jpeg" alt=""></a>
+					<a href="imgs/patio2.jpeg"><img src="imgs/patio2.jpeg" alt=""></a>
+					<a href="imgs/patio1.JPG"><img src="imgs/patio1.JPG" alt=""></a>
+					<a href="imgs/patio2.JPG"><img src="imgs/patio2.JPG" alt=""></a>
 			</div>
 		</section>
 		<footer class="footer">
@@ -144,20 +120,29 @@
 			</div>
 		</footer>
 
-		<!-- <script>
-			var scroll = new SmoothScroll('a[href*="#"]');
-		</script> -->
 		<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
         <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
         <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
         <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
         <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
         <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
-        <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
         <script>
             lightGallery(document.getElementById('lightgallery'));
 			lightGallery(document.getElementById('lightgallery2'));
 			lightGallery(document.getElementById('lightgallery3'));
 		</script>
+		
+		<!-- SmoothScroll -->
+		<script>
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth'
+					});
+				});
+			});
+		</script>	
 	</body>
 </html>
