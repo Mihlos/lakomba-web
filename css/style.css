@@ -7,7 +7,8 @@
     list-style: none;
 }
 body{
-    font-family: 'M PLUS Rounded 1c', sans-serif;;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #fafafa;
 }
 /* :target
 {
@@ -102,7 +103,7 @@ section[class^="sec"]{
     display: grid;
     grid-gap: 1em;
     padding: 1rem;
-    background-color: #fafafa;
+    
 }
 .text{
     padding: 1rem 2rem;
@@ -136,8 +137,13 @@ section[class^="sec"]{
 }
 
 .content h2{
+    display: inline;
     font-family: 'Ubuntu', sans-serif;
     font-size: 3rem;
+    transition: .5s;
+}
+.content h2:hover{
+    color: #f00;
 }
 .content p{
     margin: 20px 0 0;
@@ -147,7 +153,6 @@ section[class^="sec"]{
 
 .footer{
     color: #fff;
-    background: #000;
     line-height: 1.5;
 }
 .footer h2{
@@ -157,12 +162,36 @@ section[class^="sec"]{
 .separator{
     width: 100%;
     height: 80px;
-    background: url(../imgs/cocktails.png) center / contain no-repeat, #fafafa;
-    margin-bottom: 1rem;
+    background: url(../imgs/cocktails.png) center / contain no-repeat;
 }
 .content-footer{
-    margin: 1rem 2rem;
-    border-radius: .25rem;
+    background: #000;
+    display: grid;
+    padding: 1em 3em;
+    grid-gap: 1em 3em;
+    grid-template-areas: 'enun enun enun'
+                         'shedule localize social';
+    grid-template-rows: 1fr, 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.enun{
+    grid-area: enun;
+}
+
+.shedule{
+    grid-area: shedule;
+    
+    margin: auto;
+}
+.localize{
+    grid-area: localize;
+    text-align: center;
+    margin: auto;
+}
+.social{
+    grid-area: social;
+    text-align: center;
+    margin: auto;
 }
 .gmap{
     width: 100%;
